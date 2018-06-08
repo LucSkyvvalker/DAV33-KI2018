@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-#Print alle landen en ziek naa NaN
+#Print alle landen en zoek naar NaN
 countries = []
 def printCountries():
     counter = 0
@@ -16,7 +16,7 @@ def printCountries():
             counter += 1
     print(countries)
     print(counter)
-    print(data.adm_name[400])
+    print(data.adm_name[400]) 
 
 #Print een overzicht van alle jaren in de database
 def printYears():
