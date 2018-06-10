@@ -1,3 +1,4 @@
+import pandas as pd
 import math
 
 ###
@@ -5,10 +6,12 @@ import math
 ###
 
 # loop over the dataset and convert prices with convert_prices()
+ricedata = pd.read_csv("Riceset.csv", encoding="latin-1")
+
 for i in range(len(ricedata)):
     ricedata.at[i, 'mp_price'] = convert_prices(ricedata['mp_price'][i], ricedata['um_name'][i])
     ricedata.at[i, 'um_name'] = 'KG'
-
+ricedata.to_csv(path_or_buf="newRiceDataset.csv")
 
 ###
 # a massive function that checks the given measurement trough if-elif statements
