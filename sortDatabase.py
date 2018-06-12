@@ -17,4 +17,34 @@ def sortbydate(dataframe):
 
 list = sortbydate(rice)
 print(list.to_string())
+
+
+#maak een mooie staafdiagram
+fixedrice = sortbydate(rice)
+
+averages = {}
+for country in fixedrice.adm0_name:
+    iscountry = fixedrice.adm0_name == country
+    if country not in averages:
+        averages[country] = fixedrice[iscountry]["mp_price"].mean()
+print([*averages])
+
+output_file("bars.html")
+
+cc = [*averages]
+
+keys = averages.keys()
+values = []
+for key in keys:
+    values.append(averages[key])
+
+pp = figure(x_range=cc, plot_height=500, plot_width=5000, title="Gemiddelde prijs van suiker",
+           toolbar_location=None, tools="")
+
+pp.vbar(x=cc, top=values, width=0.9)
+
+pp.xgrid.grid_line_color = None
+pp.y_range.start = 0
+
+show(pp)
     
