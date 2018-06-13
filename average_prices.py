@@ -29,6 +29,7 @@ for country in countries:
                 if breadTimeStamp['mp_price'].mean() > 0:
                     # set meanmp_price
                     meanmp_price = float(breadTimeStamp['mp_price'].mean())
+                    commodity2 = commodity.replace(",", "")
                     # add the print, to see progress
                     #print(meanmp_price)
                     # append all values to new csv
@@ -36,7 +37,7 @@ for country in countries:
                         fOut.write(country+",")
                         fOut.write(str(meanmp_price)+",")
                         fOut.write(breadData[land]['cur_name'].unique()[0]+",")
-                        fOut.write(commodity+",KG,")
+                        fOut.write(commodity2+",KG,")
                         fOut.write(str(month)+",")
                         fOut.write(str(year))
                         fOut.write("\n")

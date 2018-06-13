@@ -18,8 +18,36 @@ def sortbydate(dataframe):
 list = sortbydate(rice)
 print(list.to_string())
 
+rice = pd.read_csv("finalRiceDataset.csv", encoding='latin-1', low_memory=False, sep=",") 
+fixedrice = sortbydate(rice)
+fixedrice.to_csv(path_or_buf="sortedFinalFixedRice.csv")
 
-#maak een mooie staafdiagram
+wheat = pd.read_csv("finalWheatDataset.csv", encoding='latin-1', low_memory=False, sep=",") 
+fixedwheat = sortbydate(wheat)
+fixedwheat.to_csv(path_or_buf="sortedFinalFixedWheat.csv")
+
+bread = pd.read_csv("finalBreadDataset.csv", encoding='latin-1', low_memory=False, sep=",") 
+fixedbread = sortbydate(bread)
+fixedbread.to_csv(path_or_buf="sortedFinalFixedBread.csv")
+
+maize = pd.read_csv("finalMaizeDataset.csv", encoding='latin-1', low_memory=False, sep=",") 
+fixedmaize = sortbydate(maize)
+fixedmaize.to_csv(path_or_buf="sortedFinalFixedMaize.csv")
+
+millet = pd.read_csv("finalMilletDataset.csv", encoding='latin-1', low_memory=False, sep=",") 
+fixedmillet = sortbydate(millet)
+fixedmillet.to_csv(path_or_buf="sortedFinalFixedMillet.csv")
+
+sorghum = pd.read_csv("finalSorghumDataset.csv", encoding='latin-1', low_memory=False, sep=",") 
+fixedsorghum = sortbydate(sorghum)
+fixedsorghum.to_csv(path_or_buf="sortedFinalFixedSorghum.csv")
+
+sugar = pd.read_csv("finalSugarDataset.csv", encoding='latin-1', low_memory=False, sep=",") 
+fixedsugar = sortbydate(sugar)
+fixedsugar.to_csv(path_or_buf="sortedFinalFixedSugar.csv")
+
+#maak een mooie staafdiagram 
+'''
 fixedrice = sortbydate(rice)
 
 averages = {}
@@ -47,4 +75,4 @@ pp.xgrid.grid_line_color = None
 pp.y_range.start = 0
 
 show(pp)
-    
+    '''
