@@ -1,12 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-<<<<<<< HEAD
-
-rice = pd.read_csv('meanRiceData.csv')
-=======
 data = pd.read_csv('meanRiceData.csv')
->>>>>>> 560cdae4fa4108e9ccae5da289f851764e8c15ed
 
 conversionDict = {'AFN': '0.0140151', 'DZD': '0.00855952', 'AMD': '0.00206902',
     'BDT': '0.0118332', 'XOF': '0.00179909', 'BTN': '0.0148341', 'BOB': '0.144752',
