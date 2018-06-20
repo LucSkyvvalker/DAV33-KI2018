@@ -18,6 +18,7 @@ def sortbydate(dataframe):
 list = sortbydate(rice)
 print(list.to_string())
 
+#Steeds vorige code herhalen om alle datasets te sorteren
 rice = pd.read_csv("finalRiceDataset.csv", encoding='latin-1', low_memory=False, sep=",") 
 fixedrice = sortbydate(rice)
 fixedrice.to_csv(path_or_buf="sortedFinalFixedRice.csv")

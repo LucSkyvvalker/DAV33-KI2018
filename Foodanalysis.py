@@ -48,6 +48,7 @@ def allTypesPerFood():
             allwheat.append(commodity)
     print(allwheat)
 
+# Bereken de gemiddelde prijs van een bepaald type voedsel per land
 def totalFoodPerCountry():
     totalrice = {"fasdf": "asdf"}
     for country in countries:
