@@ -2,8 +2,7 @@ import pandas as pd
 import numpy as np
 rice = pd.read_csv("finalRice.csv", encoding='latin-1', low_memory=False, sep=",") 
 
-rice['africa'] = np.where((rice.adm0_name == "Afghanistan") 
-                        | (rice.adm0_name == "Algeria")
+rice['africa'] = np.where((rice.adm0_name == "Algeria")
                         | (rice.adm0_name == "Chad")
                         | (rice.adm0_name == "Egypt")
                         | (rice.adm0_name == "Mauritania")
@@ -43,6 +42,7 @@ rice['africa'] = np.where((rice.adm0_name == "Afghanistan")
                         | (rice.adm0_name == "South Sudan"), 1, 0)
 rice['asia'] = np.where((rice.adm0_name == "Bangladesh")
                         | (rice.adm0_name == "Bhutan")
+                        | (rice.adm0_name == "Afghanistan")
                         | (rice.adm0_name == "Cambodia")
                         | (rice.adm0_name == "India")
                         | (rice.adm0_name == "Indonesia")
