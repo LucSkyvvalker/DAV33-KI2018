@@ -27,7 +27,13 @@ name: Groep 33, DAV
 data = [trace1];
 layout = {
   geo: {
-    projection: {type: 'Mercator'},
+    projection: {
+      rotation: {
+        lat: 40,
+        lon: -100
+      },
+      type: 'orthographic'
+    },
     showcoastlines: false,
     showcountries: true,
     showframe: true,
