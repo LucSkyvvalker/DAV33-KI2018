@@ -22,24 +22,31 @@ from sklearn.datasets import load_boston
 
 %matplotlib inline
 
+# x voor regressie
+x = pd.DataFrame(rice["mp_price"])
+x["africa"] = rice.africa
+x["asia"] = rice.asia
+x["north_america"] = rice.north_america
+x["south_america"] = rice.south_america
+x.columns = ["mp_price", "africa", "asia", "north_america", "south_america"]
+
+# Target voor regressie 
+y = pd.DataFrame(rice["target"])
+y.columns = ['target']
+
+
+# Kmeans
 rice.columns = rice.iloc[0]
 x = pd.DataFrame(rice.iloc[1])
 
-# K Means Cluster
 model = KMeans(n_clusters=5)
 model.fit(x)
 
-# This is what KMeans thought
 model.labels_
 
-# View the results
-# Set the size of the plot
 plt.figure(figsize=(14,7))
- 
-# Create a colormap
+
 colormap = np.array(['red', 'lime', 'black', 'yellow', 'blue'])
- 
-# Plot the Models Classifications
 plt.subplot(1, 2, 2)
 plt.scatter(x.mp_price, x.mp_price, c=colormap[model.labels_], s=40)
 plt.title('K Mean Classification')
