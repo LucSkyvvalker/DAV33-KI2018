@@ -1,4 +1,8 @@
-# DAV33-KI2018
+# DAV33-KI2018 https://lucskyvvalker.github.io/DAV33-KI2018/ 
+# Chandni Bagchi
+# Stijn Hamerslag
+# Emiel Sanders
+# Luc Vink
 
 A group project for the first year of Artificial Intelligence studies at the University of Amsterdam.
 This is an attempt to make use of Machine Learning alghoritms on a large Dataset on Global Food Prices.
