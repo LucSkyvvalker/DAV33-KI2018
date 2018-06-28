@@ -1,3 +1,4 @@
+/* http://jmcglone.com/guides/github-pages/ */
 body {
     margin: 60px auto;
     width: 70%;
@@ -42,7 +43,7 @@ ul.posts li {
     list-style: none;
 }
 
-/* W3 schools */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav */
 body {
     font-family: "Lato", sans-serif;
 }
@@ -117,4 +118,3 @@ a:hover {
 .round {
     border-radius: 50%;
 }
-/* Tot hier W3schools */
