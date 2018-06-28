@@ -7,5 +7,39 @@ theme: jekyll-theme-minimal
 <!-- Plotly chart will be drawn inside this div -->
  <div id="plotly-div"></div>
   <script>
-  
+  trace1 = {
+  z: [0.62, 0.62, 0.62, 0.62, 0.62, 0.62, 0.62, 0.62, 0.62, 0.62, 0.89, 0.84, 0.86, 0.85, 0.88, 0.83, 0.86, 0.85, 0.86, 0.83, 0.89, 0.82, 0.83, 0.88, 0.82, 0.88, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 1.87, 1.71, 1.72, 1.78, 1.81, 1.81, 1.79, 1.84, 1.84, 0.27, 0.28, 0.28, 0.26, 0.28, 0.28, 0.28, 0.27, 0.27, 1.0, 0.69, 0.67, 0.7, 0.71, 0.7, 0.71, 0.71, 0.74, 0.53, 0.44, 0.44, 0.44, 0.44, 0.41, 0.46, 0.44, 0.44, 0.43, 0.24, 20.2, 0.24, 0.24, 0.24, 0.24, 1.235625, 1.235625, 1.235625, 1.1120625, 1.1120625, 1.1120625, 1.1120625, 1.23125366, 1.2307189965, 1.2368294365, 1.248821175, 1.2380515245, 1.236447534, 1.238280666, 1.24041932, 1.2382042855, 1.2351490655, 1.45, 1.38, 1.37, 1.42, 1.55, 1.45, 1.6, 1.52, 1.56, 1.59, 0.18, 0.1, 0.17, 0.1, 0.1, 0.18, 0.1, 0.17, 0.1, 0.17, 0.1, 0.17, 0.17, 0.1, 0.1, 0.17, 0.11, 0.18, 1.32, 1.32, 1.32, 1.32, 1.32, 1.32, 1.32, 1.29, 1.32, 1.29, 0.55, 0.88, 0.88, 0.55, 0.88, 0.55, 0.91, 0.93, 0.93, 0.93, 0.93, 0.68, 0.71, 0.71, 0.74, 0.73, 0.76, 0.73, 0.77, 0.74, 0.77, 0.75, 0.77, 0.75, 0.78, 0.8, 0.77, 0.81, 0.78, 0.97, 0.98, 0.93, 0.93, 0.93, 0.93, 0.93, 0.98, 0.94, 0.96],
+  autocolorscale: false,
+  colorbar: {
+    tickprefix: '$',
+    title: 'USD<br>$'
+  },
+  colorscale: [['0', 'rgb(5, 10, 172)'], ['0.35', 'rgb(40, 60, 190)'], ['0.5', 'rgb(70, 100, 245)'], ['0.6', 'rgb(90, 120, 245)'], ['0.7', 'rgb(106, 137, 247)'], ['1', 'rgb(220, 220, 220)']],
+  locationmode: 'country names',
+  locations: ['Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine'],
+  locationssrc: 'LucSkyvvalker:1:c64c04',
+  marker: {line: {
+      color: 'rgb(180,180,180)',
+      width: 0.5
+    }},
+  reversescale: true,
+  text: ['Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Afghanistan', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Armenia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Congo', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Djibouti', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Gambia', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Guinea', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Turkey', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'Ukraine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine', 'State of Palestine'],
+  textsrc: 'LucSkyvvalker:1:0a77f9',
+  type: 'choropleth',
+  zsrc: 'LucSkyvvalker:1:881259'
+};
+data = [trace1];
+layout = {
+  geo: {
+    projection: {type: 'Mercator'},
+    showcoastlines: false,
+    showframe: false,
+    showland: true
+  },
+  title: '2017 Bread Prices'
+};
+Plotly.plot('plotly-div', {
+  data: data,
+  layout: layout
+});
   </script>
