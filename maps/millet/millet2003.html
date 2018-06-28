@@ -1,0 +1,42 @@
+---
+layout: maps
+name: Groep 33, DAV
+theme: jekyll-theme-minimal
+---
+
+<!-- Plotly chart will be drawn inside this div -->
+ <div id="plotly-div"></div>
+  <script>
+trace1 = {
+  z: [0.21, 0.22, 0.2, 0.21, 0.19, 0.18, 0.17, 0.17, 0.16, 0.15, 0.15, 0.14, 0.25, 0.25, 0.26, 0.26, 0.25, 0.25, 0.24, 0.22, 0.2, 0.2, 0.18, 0.17, 0.21, 0.2, 0.19, 0.32, 0.31, 0.32, 0.32, 0.32, 0.33, 0.32, 0.31, 0.3, 0.29, 0.25, 0.2, 0.26, 0.28, 0.28, 0.27, 0.27, 0.26, 0.25, 0.23, 0.21, 0.19, 0.19, 0.19, 0.35, 0.34, 0.33, 0.33, 0.32, 0.32, 0.26, 0.24, 0.23, 0.21, 0.23, 0.23, 0.36, 0.35, 0.32, 0.29, 0.31, 0.32, 0.31, 0.3, 0.32, 0.29, 0.25, 0.23, 0.0266664, 0.026388625, 0.02722195, 0.0325305388889, 0.0334718875, 0.0324688111111, 0.0309719125, 0.0318052375, 0.0304758857143, 0.0319044428571, 0.02944415, 0.0281743214286], 
+  autocolorscale: false, 
+  colorbar: {
+    tickprefix: '$', 
+    title: 'USD<br>$'
+  }, 
+  colorscale: [['0', 'rgb(5, 10, 172)'], ['0.35', 'rgb(40, 60, 190)'], ['0.5', 'rgb(70, 100, 245)'], ['0.6', 'rgb(90, 120, 245)'], ['0.7', 'rgb(106, 137, 247)'], ['1', 'rgb(220, 220, 220)']], 
+  locationmode: 'country names', 
+  locations: ['Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Chad', 'Chad', 'Chad', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan'], 
+  marker: {line: {
+      color: 'rgb(180,180,180)', 
+      width: 0.5
+    }}, 
+  reversescale: true, 
+  text: ['Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Benin', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Burkina Faso', 'Chad', 'Chad', 'Chad', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Mali', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Niger', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Nigeria', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Senegal', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan', 'Sudan'], 
+  type: 'choropleth'
+};
+data = [trace1];
+layout = {
+  geo: {
+    projection: {type: 'Mercator'}, 
+    showcoastlines: false, 
+    showframe: false, 
+    showland: true
+  }, 
+  title: '2013 Bread Prices'
+};
+Plotly.plot('plotly-div', {
+  data: data,
+  layout: layout
+});
+    </script>
