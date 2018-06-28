@@ -1,4 +1,4 @@
-# DAV33-KI2018 https://lucskyvvalker.github.io/DAV33-KI2018/ 
+Website can be found at: https://lucskyvvalker.github.io/DAV33-KI2018/ 
 
 A group project for the first year of Artificial Intelligence studies at the University of Amsterdam.\
 This is an attempt to make use of Machine Learning alghoritms on a large dataset on Global Food Prices.\
