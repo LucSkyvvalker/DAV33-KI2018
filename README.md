@@ -5,7 +5,7 @@ All python scripts are example codes, the actual running of scripts was performe
   The /analytics directory contains python scripts that were used for analyzing the datasets.
 The other directories are meant for the website used to show some of our findings, we have made use of Jekyll for the theme of the website.(http://jmcglone.com/) For the sidenav and buttons we have used w3schools (www.w3school.com) and the plots found in /maps are generated with plotly (plot.ly).
  # DAV33-KI2018 https://lucskyvvalker.github.io/DAV33-KI2018/
- # Chandni Bagchi
- # Stijn Hamerslag
- # Emiel Sanders 
- # Luc Vink
+ # Chandni Bagchi https://github.com/ChandniBagchi
+ # Stijn Hamerslag https://github.com/DCHamerslag
+ # Emiel Sanders https://github.com/EmielDavid
+ # Luc Vink https://github.com/LucSkyvvalker
