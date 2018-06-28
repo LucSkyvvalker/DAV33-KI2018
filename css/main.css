@@ -85,4 +85,35 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: lightgrey;
+    color: white;
+}
+
+.previous {
+    background-color: lightgrey;
+    color: white;
+}
+
+.next {
+    background-color: lightgrey;
+    color: white;
+}
+
+.round {
+    border-radius: 50%;
 /* Tot hier W3schools */
