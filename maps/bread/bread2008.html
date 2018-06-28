@@ -1,0 +1,46 @@
+---
+layout: maps
+name: Groep 33, DAV
+theme: jekyll-theme-minimal
+---
+
+<!-- Plotly chart will be drawn inside this div -->
+ <div id="plotly-div"></div>
+  <script>
+
+  trace1 = {
+    z: [2.07, 2.15, 2.29, 2.38, 2.4, 2.45, 2.39, 2.39, 2.32, 2.35, 2.33, 2.32, 0.8155125, 0.8155125, 0.8155125, 0.8155125, 0.8155125, 0.8155125, 0.8155125, 0.8155125, 0.840225, 0.840225, 0.840225, 0.840225, 0.4, 0.41, 0.42, 0.42, 0.45, 0.49, 0.49, 0.49, 0.49, 0.49, 0.49, 0.49, 0.99, 0.99, 0.99, 1.01, 0.99, 0.99, 1.08, 1.06, 1.06, 0.97, 0.96, 0.96],
+    autocolorscale: false,
+    colorbar: {
+      tickprefix: '$',
+      title: 'USD<br>$'
+    },
+    colorscale: [['0', 'rgb(5, 10, 172)'], ['0.35', 'rgb(40, 60, 190)'], ['0.5', 'rgb(70, 100, 245)'], ['0.6', 'rgb(90, 120, 245)'], ['0.7', 'rgb(106, 137, 247)'], ['1', 'rgb(220, 220, 220)']],
+    locationmode: 'country names',
+    locations: ['Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan'],
+    locationssrc: 'LucSkyvvalker:1:12cebc',
+    marker: {line: {
+        color: 'rgb(180,180,180)',
+        width: 0.5
+      }},
+    reversescale: true,
+    text: ['Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan'],
+    textsrc: 'LucSkyvvalker:1:a5e763',
+    type: 'choropleth',
+    zsrc: 'LucSkyvvalker:1:0afe0f'
+  };
+  data = [trace1];
+  layout = {
+    geo: {
+      projection: {type: 'Mercator'},
+      showcoastlines: false,
+      showframe: false,
+      showland: true
+    },
+    title: '2008 Bread Prices'
+  };
+  Plotly.plot('plotly-div', {
+    data: data,
+    layout: layout
+  });
+  </script>

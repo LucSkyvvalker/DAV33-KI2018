@@ -1,0 +1,45 @@
+---
+layout: maps
+name: Groep 33, DAV
+theme: jekyll-theme-minimal
+---
+
+<!-- Plotly chart will be drawn inside this div -->
+ <div id="plotly-div"></div>
+  <script>
+  trace1 = {
+    z: [0.11, 0.11, 0.11, 0.11, 0.11, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 0.12, 2.48, 2.55, 2.63, 2.65, 2.71, 2.69, 2.71, 2.7, 2.75, 2.75, 2.81, 2.79, 0.23, 0.23, 0.23, 0.23, 0.23, 0.23, 0.23, 0.23, 0.23, 0.23, 0.23, 0.939075, 0.939075, 0.9885, 0.9885, 0.9885, 0.9885, 1.0132125, 0.9885, 0.9885, 0.9885, 1.0132125, 0.9885, 0.54, 0.55, 1.26, 1.22, 1.2, 0.57, 1.22, 1.18, 1.19, 1.19, 1.2, 1.2, 0.795121005, 0.7926004485, 0.7910728385, 0.7985581275, 0.799703835, 0.799398313, 0.7974888005, 0.804286665, 0.809786061, 0.8949503185, 0.800009357, 0.794815483, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 1.09, 1.11, 1.11, 1.09, 0.93, 0.93, 0.93, 0.93, 0.93, 0.93, 0.91, 0.93],
+    autocolorscale: false,
+    colorbar: {
+      tickprefix: '$',
+      title: 'USD<br>$'
+    },
+    colorscale: [['0', 'rgb(5, 10, 172)'], ['0.35', 'rgb(40, 60, 190)'], ['0.5', 'rgb(70, 100, 245)'], ['0.6', 'rgb(90, 120, 245)'], ['0.7', 'rgb(106, 137, 247)'], ['1', 'rgb(220, 220, 220)']],
+    locationmode: 'country names',
+    locations: ['Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan'],
+    locationssrc: 'LucSkyvvalker:1:d5bb51',
+    marker: {line: {
+        color: 'rgb(180,180,180)',
+        width: 0.5
+      }},
+    reversescale: true,
+    text: ['Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Jordan', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Syrian Arab Republic', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan'],
+    textsrc: 'LucSkyvvalker:1:de9bc6',
+    type: 'choropleth',
+    zsrc: 'LucSkyvvalker:1:2affaa'
+  };
+  data = [trace1];
+  layout = {
+    geo: {
+      projection: {type: 'Mercator'},
+      showcoastlines: false,
+      showframe: false,
+      showland: true
+    },
+    title: '2011 Bread Prices'
+  };
+  Plotly.plot('plotly-div', {
+    data: data,
+    layout: layout
+  });
+  </script>

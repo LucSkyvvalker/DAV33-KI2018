@@ -1,0 +1,45 @@
+---
+layout: maps
+name: Groep 33, DAV
+theme: jekyll-theme-minimal
+---
+
+<!-- Plotly chart will be drawn inside this div -->
+ <div id="plotly-div"></div>
+  <script>
+  trace1 = {
+    z: [0.1, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 0.11, 2.29, 2.32, 2.35, 2.35, 2.33, 2.33, 2.33, 2.33, 2.36, 2.38, 2.39, 2.41, 0.840225, 0.840225, 0.840225, 0.8649375, 0.7660875, 0.8155125, 0.840225, 0.939075, 0.939075, 0.939075, 0.939075, 0.9637875, 0.43, 0.44, 0.44, 0.44, 0.44, 0.44, 0.45, 0.48, 0.51, 0.51, 0.54, 0.54, 0.803064577, 0.7907673165, 0.790690936, 0.790232653, 0.7906145555, 0.805355992, 0.791454741, 0.7860317255, 0.793440634, 0.794662722, 0.800009357, 0.794815483, 0.9, 0.91, 0.9, 0.89, 0.84, 0.86, 0.91, 0.93, 1.01, 1.07, 1.09, 1.09],
+    autocolorscale: false,
+    colorbar: {
+      tickprefix: '$',
+      title: 'USD<br>$'
+    },
+    colorscale: [['0', 'rgb(5, 10, 172)'], ['0.35', 'rgb(40, 60, 190)'], ['0.5', 'rgb(70, 100, 245)'], ['0.6', 'rgb(90, 120, 245)'], ['0.7', 'rgb(106, 137, 247)'], ['1', 'rgb(220, 220, 220)']],
+    locationmode: 'country names',
+    locations: ['Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan'],
+    locationssrc: 'LucSkyvvalker:1:86def1',
+    marker: {line: {
+        color: 'rgb(180,180,180)',
+        width: 0.5
+      }},
+    reversescale: true,
+    text: ['Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Bolivia', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Guatemala', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kenya', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Kyrgyzstan', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Lesotho', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan', 'Tajikistan'],
+    textsrc: 'LucSkyvvalker:1:10ebbf',
+    type: 'choropleth',
+    zsrc: 'LucSkyvvalker:1:fc7f9f'
+  };
+  data = [trace1];
+  layout = {
+    geo: {
+      projection: {type: 'Mercator'},
+      showcoastlines: false,
+      showframe: false,
+      showland: true
+    },
+    title: '2010 Bread Prices'
+  };
+  Plotly.plot('plotly-div', {
+    data: data,
+    layout: layout
+  });
+  </script>
